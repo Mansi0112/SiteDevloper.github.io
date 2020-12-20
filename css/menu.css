@@ -168,7 +168,7 @@
 #cssmenu > ul > li.has-sub > a {
   padding-right: 40px;
 }
-#cssmenu > ul > li.has-sub > a:after {
+ #cssmenu > ul > li.has-sub > a:after {
   display: block;
   content: "";
   background: #ffffff;
@@ -331,7 +331,7 @@
   #cssmenu ul li ul li:hover > a {
     color: #000000;
   }
-  #cssmenu #menu-button {
+ #cssmenu #menu-button {
     display: block;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -367,3 +367,4 @@
     top: 26px;
   }
 }
+

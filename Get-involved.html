@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Cofrontierus</title>
+	<meta name="description" content="IIT Bomaby presents...">
+	<meta name="author" content="Cofrontierus.org">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+	
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+
+	.bg{
+		background-image: url('../images/image.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 2300px;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 30px;
+	}
+	
+		.title{
+		font-size: 60px;
+		color: black;
+		justify-content: center;
+		font-family: serif;
+	}
+	
+	.boss{
+		font-size: 25px;
+		font-family: sans-serif;
+		color: black;
+		padding-left: 100px;
+		padding-right: 100px;
+
+	}
+
+	@media (max-width: 900px){
+		.boss{
+		font-size: 25px;
+		font-family: sans-serif;
+		color:  ;
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+		.bg{
+		background-image: url('../images/image.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 1800px;
+	}
+	}
+
+
+
+		.donation-container {
+	height: 1000px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.donation-box {
+	/*width: 390px;
+	height: 386px;*/
+	width: 900px;
+	height: 480px;
+	background-color: #F5F5F5;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+@media (max-width: 975px){
+	.donation-box {
+	width: 390px;
+	height: 386px;
+	background-color: #F5F5F5;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+
+	}
+}
+
+.donation-box .title {
+	background-color: #C1D82F;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 15px;
+}
+
+.donation-box .donate-button {
+	background-color: #C1D82F;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	bottom: 0px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.donation-box .fields {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.donation-box .fields input {
+	width: 90%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	color: #5C5C5C;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.donation-box .amount {
+	width: 30%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+}
+
+.donation-box .amount .button {
+	width: 100%;
+	background-color: gray;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+	padding: 15px 0px 15px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	
+	-webkit-transition: 400ms background-color;
+	-moz-transition: 800ms opacity, 800ms right;
+	-ms-transition: 800ms opacity, 800ms right;
+	-o-transition: 800ms opacity, 800ms right;
+	transition: 200ms background-color;
+}
+
+.donation-box .amount .button:hover {
+	background-color: #393939;
+}
+
+.donation-box .amount .button.selected {
+	background-color: #393939;
+}
+
+.donation-box .amount .button input {
+	min-width: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	border-bottom: 2px dashed white;
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.set-amount {
+	max-width: 96px;
+}
+
+.switch {
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  margin: 20px auto;
+  height: 26px;
+  width: 58.5%;
+  background: white;
+  border-radius: 3px;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 49%;
+  line-height: 26px;
+  font-size: 11px;
+  color: #5C5C5C;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 268px;
+}
+
+@media (max-width: 975px){
+	.switch-input:checked + .switch-label-on ~ .switch-selection {
+  		left: 118px;
+}
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 49%;
+  height: 22px;
+  background: #65bd63;
+  border-radius: 3px;
+  background-color: #C1D82F;
+  
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.checkboxes {
+	position: absolute;
+	top: 242px;
+	left: 13px;
+}
+
+.checkboxes label {
+	position: relative;
+	top: -8px;
+	font-size: 13px;
+	color: gray;
+}
+
+.checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #C1D82F;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.checkbox:active,.checkbox:checked:active {
+	
+}
+
+.checkbox:checked {
+	background-color: #C1D82F;
+	border: 1px solid #C1D82F;
+	color: white;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+.confirm {
+	display: none;
+	position: absolute;
+	top: 335px;
+	left: 15px;
+	right: 15px;
+	font-size: 16px;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.confirm i {
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: normal;
+}
+
+
+
+</style>
+
+<body class="archive-page">
+	<div class="wrap-body">
+		<header>
+			<div class="wrap-header" >
+				<!--Top-->
+				<div id="top">
+					<div class="style1.css">
+						<div class="row">
+							<div class="col-1-3">
+								<span>Welcome To My Site</span>
+							</div>
+							<div class="col-2-3">
+								<ul class="list-inline top-link link">
+									<li><a href="https://www.facebook.com/Cofrontierus-103827031628343/">Facebook</a></li>
+									<li><a href="https://www.facebook.com/Cofrontierus-103827031628343/">Instagram</a></li>
+									<li><a href="https://www.facebook.com/Cofrontierus-103827031628343/">Twitter</a></li>
+									<li><a href="https://www.facebook.com/Cofrontierus-103827031628343/">Google +</a></li>
+									<li><a href="https://www.facebook.com/Cofrontierus-103827031628343/">Pinterest</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!---Main Header--->
+				<div class="main-header">
+					<div class="style1.css">
+						<div class="row">
+							<div class="hero-heading">
+								<sup>GET INVOLVED</sup>
+								<span>COFRONTIERUS</span>
+								<div class="tl"></div>
+								<div class="tr"></div>
+								<div class="br"></div>
+								<div class="bl"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!---Top Menu--->
+				<div id="cssmenu">
+					
+					<ul>
+						<li class="active"><a href="index.html"><span>Home</span></a></li>
+						<li><a href="About.html"><span>About</span></a></li>
+						<li><a href="Latest updates.html"><span>Latest updates</span></a></li>
+						<li><a href="media.html"><span>Media</span></a></li>
+						<li><a href="Get-involved.html"><span>Get Involved</span></a></li>
+						<li><a href="work_with_us.html"><span>Work with us</span></a>
+						<ul>
+							<li class="has-sub"><a href="volunteer us.html"><span>Volunteer us</span></a>
+							</li>
+							<li class="has-sub"><a href="Get job.html"><span>Get job</span></a>
+							</li>
+						 </ul>
+						</li>
+						<li class="last"><a href="contact.html"><span>Contact</span></a></li>
+					</ul>
+				</div>
+		</header>
+
+		<!--////////////////////////////////////Container-->
+		<section id="container">
+			<div class="wrap-container style1.css">
+				<div class="crumbs">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Get-involved.html">Get Involved</a></li>
+					</ul>
+				</div>
+				<div id="main-content">
+					<div class="wrap-content">
+						<br><br><br>
+					<div class="bg">
+						<br><br><br><br><br>
+						<CENTER>
+
+	<div class="title"> DONATE US</div>
+	
+	<br><br><br><br>
+
+	<img src="images/homeless-man-5520021.jpg" width="700px" >
+	</CENTER>
+	<br><br><br><br><br><br>
+	<div class="boss">
+		Across world, the different projects under taken by COFRONTIERUS can help children and families affected by covid pandemic, can look forward to better opportunities and a better life for themselves.
+You van help us bring about permanent change so affected families can have a happy, healthy and protected life forever. Keep supporting us, together; we can keep working for good and wellbeing for others . Make a secure, tax-deductible donation to COFRONTIERUS .
+	</div>
+	<br><br><br><br>
+
+	<div class="donation-container">
+            
+            <div class="donation-box">
+	            <div class="title">Donation Information</div>
+	            
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> </input>
+		            <input type="text" id="lastName" placeholder="Last Name"> </input>
+		            <input type="text" id="email" placeholder="Email"> </input>
+	            </div>
+	            
+	            <div class="amount">
+		            <div class="button">$30</div>
+		            <div class="button">$50</div>
+		            <div class="button">$100</div>
+		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+	            </div>
+	            
+	            <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>
+			    
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+			    
+			    <div class="confirm">
+				    
+			    </div>
+	            
+	            <div class="donate-button"> Donate Now</div>
+            </div>
+            
+        </div>
+</div>
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--////////////////////////////////////Footer-->
+		<footer>
+			<div class="style1.css wrap-footer">
+				<div class="row">
+					<div class="col-2-4 col-footer-1">
+						<div class="wrap-col">
+							<h3 class="widget-title">About</h3>
+							<p class="abt" style="color: whitesmoke;">
+								Cofrontierus is playing an essential role<br> in helping the individuals obtain critical services<br>
+								 and supports allowing them to adjust to the COVID-19 era.
+							</p>
+							<ul class="quicklinks">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-4 col-footer-2">
+						<div class="wrap-col">
+							<h3 class="widget-title">Contact Us</h3>
+							<p>Call us:</p>
+							<strong style="font-size: 25px; color: whitesmoke;">9999-8978-32</strong>
+							<p>Address:</p>
+							<strong style="color: whitesmoke;">A-12, 5th Floor, Tower II, Bhilwara Towers, Sector 12, Gautam Nagar, Gurugram, HR-201301</strong>
+							<p>Email:</p>
+							<strong style="color: whitesmoke;">cofrontierus@forall.com</strong>
+						</div>
+					</div>
+					<div class="col-1-4 col-footer-3">
+						<div class="wrap-col">
+						</div>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="copyright"></div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+	</div>
+	
+</body>
+</html>
